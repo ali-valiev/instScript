@@ -32,3 +32,14 @@ cp -r $user_home/.config/dotfiles/wall $user_home/.config/wall/
 mv $user_home/.bashrc $user_home/.bashrc-old
 cp $user_home/.config/dotfiles/bashrc $user_home/.bashrc
 sudo cp $user_home/.config/dotfiles/usr/bin/* /usr/bin/
+
+#Add DWM to xsessions
+sudo cat > /usr/share/xsessions/dwm.desktop<< EOF
+[Desktop Entry]
+Encoding=UTF-8
+Name=dwm
+Comment=Dynamic window manager
+Exec=dwm
+Icon=DWM
+Type=XSession
+EOF
