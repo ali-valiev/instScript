@@ -34,7 +34,7 @@ cp $user_home/.config/dotfiles/bashrc $user_home/.bashrc
 sudo cp $user_home/.config/dotfiles/usr/bin/* /usr/bin/
 
 #Add DWM to xsessions
-sudo cat > /usr/share/xsessions/dwm.desktop<< EOF
+sudo echo > /usr/share/xsessions/dwm.desktop<< EOF
 [Desktop Entry]
 Encoding=UTF-8
 Name=dwm
